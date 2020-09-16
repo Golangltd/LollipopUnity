@@ -1,2 +1,8 @@
 Assets/*.meta
 Library
+Temp
+Logs
+Packages
+ProjectSettings
+*.csproj
+*.sln
