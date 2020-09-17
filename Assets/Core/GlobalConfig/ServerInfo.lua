@@ -1,6 +1,9 @@
 
-require("Core.Util.md5")
-require("../Util/Util")
+--require("D:\7Lcs.Com\LollipopUnity\Assets\Core\Util")
+package.path = package.path .. ";.\\Core\\Util\\?.lua;"
+--require("Util")
+require("lfs")
+
 -- 作者: 彬哥
 -- E-mail: 1528884535@qq.com
 -- 创建时间：2020年9月16日
@@ -48,13 +51,10 @@ function ServerInfo.CreatServerIdMD5(serverId)
 	return 0;
 end
 
+path=lfs.currentdir()
+print(path)
 
-function ServerInfo.Testbinge()
-	print("Testbinge:",ServerInfo.CreatServerIdMD5(1));
-end
+package.path = package.path.."../Util/?.lua"
+print(package.path)
 
 return ServerInfo
-
-
-
-

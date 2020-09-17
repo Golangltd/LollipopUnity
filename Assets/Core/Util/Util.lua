@@ -2,6 +2,7 @@
 require("md5")
 
 Util = {}
+
 -- ´´½¨Ã¶¾Ù
 function CreatEnumTable(tbl, index)
    -- assert(IsTable(tbl))
