@@ -12,22 +12,26 @@ function WebSocket.Send(protoName,jsonTable,fun)
 	local data = {}
 	data.Protocol = 1
 	data.Protocol2 = 1
-	data.ServerID = md5.sumhexa()
+	data.ServerID = md5.sumhexa("1")
 	data.Data = jsonTable
 end
 
-
-function OnMessage()
+--C#接收到数据派发
+--相应的lua处理
+--可以实现派发机制
+function WebSocket.OnMessage()
 end
 
-function Open()
+--直接调用C#的
+function WebSocket.Open()
 end
 
-function Error()
+--直接C#提示,无需转lua调用
+function WebSocket.Error()
 end
 
-function OnClose()
+--直接C#关闭,无需转lua调用
+function WebSocket.OnClose()
 end
 
-function NewWebsocket()
-end
+return WebSocket
