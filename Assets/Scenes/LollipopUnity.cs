@@ -23,6 +23,7 @@ public class LollipopUnity : MonoBehaviour
     }
     #endregion
 
+    #region 1. 加载lua路径
     private byte[] CustomLoader(ref string filepath)
     {
         string str = Application.dataPath + "/Scenes/" + filepath + ".lua";
@@ -30,4 +31,13 @@ public class LollipopUnity : MonoBehaviour
             return File.ReadAllBytes(str);
         return null;
     }
+    #endregion
+
+
+    private void OnDestroy()
+    {
+        luaenv.Dispose();
+        luaenv = null;
+    }
+
 }
