@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-//因为这个脚本不需要作为组件存在所以不需要继承自MonoBehaviour
-public class NewButton
+namespace BinGe
 {
-    //MenuItem(string itemName,bool isValidateFunction,int priority);
-    [MenuItem("LollipopUinty/Test1", false, 1)]
-    static void Test1()
+    // 因为这个脚本不需要作为组件存在所以不需要继承自MonoBehaviour
+    public class LollipopUinty
     {
-        Debug.Log("Test1");
+        // MenuItem(string itemName,bool isValidateFunction,int priority);
+        [MenuItem("LollipopUinty/Author", false, 1)]
+        static void Author()
+        {
+            Debug.Log("彬哥");
+        }
     }
 }
