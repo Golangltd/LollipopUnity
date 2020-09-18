@@ -33,6 +33,12 @@ print(EnumTable.ET2)
 比如从10开始，只要把上面创建枚举表的语句换成下面这样就可以了：
 EnumTable = CreatEnumTable(EnumTable, 10)
 
+path=lfs.currentdir()
+print(path)
+
+package.path = package.path.."../Util/?.lua"
+print(package.path)
+
 --]]
 
 
