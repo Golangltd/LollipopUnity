@@ -7,7 +7,7 @@ using XLua;
 /*
     LollipopUnity 游戏框架基类
     其他模块继承本类
- */
+*/
 
 namespace LollipopUinty.CGO
 {
@@ -22,12 +22,11 @@ namespace LollipopUinty.CGO
 
         public CGameObject()
         {
-
+            this.userInfo = new UserInfo();
         }
 
-        ~CGameObject()
+         ~CGameObject()
         {
-            this.userInfo = new UserInfo();
             this.LoginUrl = "";
             this.ProxyUrl = "";
             this.Token = "";

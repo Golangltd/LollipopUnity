@@ -5,7 +5,7 @@ using UnityEngine;
 /**
  * 
  *   游戏中的结构体集合
- * 
+ *   
  * 
  * 
  * */
@@ -79,5 +79,14 @@ namespace LollipopUnity.GST
             int AttackPower;
             int DefensePower;
         }
+
+    // 邮件结构
+    public struct MailSt
+    {
+        int MailId;
+        string MailTitle;
+        string Sender;
+        string Content;
+    }
     
 }
