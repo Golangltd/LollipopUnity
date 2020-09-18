@@ -3,7 +3,6 @@ using UnityEditor;
 
 namespace BinGeTools
 {
-    // 因为这个脚本不需要作为组件存在所以不需要继承自MonoBehaviour
     public class LollipopUinty: MonoBehaviour
     {
         // MenuItem(string itemName,bool isValidateFunction,int priority);

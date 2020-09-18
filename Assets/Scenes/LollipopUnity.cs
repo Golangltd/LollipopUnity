@@ -5,7 +5,7 @@ using UnityEngine;
 using XLua;
 using System.IO;
 
-public class LollipopUnity : MonoBehaviour
+public class LollipopUnityX : MonoBehaviour
 {
     LuaEnv luaenv = new LuaEnv();
     void Start()
