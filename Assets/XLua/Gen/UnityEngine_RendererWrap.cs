@@ -10,7 +10,7 @@ using LuaCSFunction = XLua.LuaDLL.lua_CSFunction;
 
 using XLua;
 using System.Collections.Generic;
-
+using UnityEngine;
 
 namespace XLua.CSObjectWrap
 {
@@ -21,7 +21,7 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(UnityEngine.Renderer);
-			Utils.BeginObjectRegister(type, L, translator, 0, 6, 27, 22);
+			Utils.BeginObjectRegister(type, L, translator, 0, 7, 27, 22);
 			
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "HasPropertyBlock", _m_HasPropertyBlock);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "SetPropertyBlock", _m_SetPropertyBlock);
@@ -29,6 +29,7 @@ namespace XLua.CSObjectWrap
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "GetMaterials", _m_GetMaterials);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "GetSharedMaterials", _m_GetSharedMaterials);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "GetClosestReflectionProbes", _m_GetClosestReflectionProbes);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "UpdateGIMaterials", _m_UpdateGIMaterials);
 			
 			
 			Utils.RegisterFunc(L, Utils.GETTER_IDX, "bounds", _g_get_bounds);
@@ -312,6 +313,33 @@ namespace XLua.CSObjectWrap
                     System.Collections.Generic.List<UnityEngine.Rendering.ReflectionProbeBlendInfo> _result = (System.Collections.Generic.List<UnityEngine.Rendering.ReflectionProbeBlendInfo>)translator.GetObject(L, 2, typeof(System.Collections.Generic.List<UnityEngine.Rendering.ReflectionProbeBlendInfo>));
                     
                     gen_to_be_invoked.GetClosestReflectionProbes( _result );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_UpdateGIMaterials(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                UnityEngine.Renderer gen_to_be_invoked = (UnityEngine.Renderer)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    
+                    gen_to_be_invoked.UpdateGIMaterials(  );
                     
                     
                     

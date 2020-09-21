@@ -56,6 +56,7 @@ ServerIDEunm =
 -- 生成ServerId的MD5数据
 function CreatServerIdMD5(serverId)
     print("CreatServerIdMD5:",serverId);
+
 	ServerIDEunm = CreatEnumTable(ServerIDEunm,0);
 	if (serverId == ServerIDEunm.ProxyServerId) then
 		return md5.sumhexa(ServerIDEunm.ProxyServerId);
