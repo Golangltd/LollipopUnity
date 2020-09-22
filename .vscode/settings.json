@@ -55,6 +55,8 @@
     },
     "Lua.diagnostics.globals": [
         "version",
-        "CreatServerIdMD5"
+        "CreatServerIdMD5",
+        "CS",
+        "init"
     ]
 }

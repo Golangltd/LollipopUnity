@@ -12,7 +12,13 @@ using UnityEngine;
 
 namespace LollipopUnity.GST
 {
-
+    public class GlobalSt
+    {
+        public void Test()
+        {
+            Debug.Log("啊啊啊啊啊啊啊啊啊啊啊啊啊");
+        }
+    }
         // 玩家结构
       public  struct UserInfo
         {

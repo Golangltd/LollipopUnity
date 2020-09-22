@@ -1,13 +1,14 @@
--- ����: ���
--- E-mail: 1528884535@qq.com
--- ����ʱ�䣺2020��9��16��
+
+local skill = require "Assets.General.Config.skill"
 
 ServerInfo =
 {
-  LoginServerUrl = "192.168.2.115:7601", -- ��¼��������ַ
-  ProxyServerUrl = "192.168.2.115:8888", -- ������������������ص�ַ
+  LoginServerUrl = "192.168.2.115:7601", 
+  ProxyServerUrl = "192.168.2.115:8888", 
 }
 
+-- lua table 怎么建立
+print("----000",skill[1].name)
 
 return ServerInfo
 
