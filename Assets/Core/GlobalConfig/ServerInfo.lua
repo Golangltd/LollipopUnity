@@ -1,5 +1,5 @@
 
-local skill = require "Assets.General.Config.skill"
+local skill = require "Assets.General.Config.skill" -- 加载配置文件
 
 ServerInfo =
 {
@@ -11,4 +11,3 @@ ServerInfo =
 print("----000",skill[1].name)
 
 return ServerInfo
-
