@@ -1,13 +1,14 @@
 
 require("md5")
 
---WebSocketÍøÂç½Ó¿Ú£¬Êı¾İÊÕ·¢µÈ
---ÓëC#½»»¥Âß¼­
+--[[
+   ç½‘ç»œæ¥å£æ“ä½œ
+
+]]
 
 WebSocket={}
 
--- ·¢ËÍº¯Êı
--- ·¢ËÍ¸ø´úÀí·şÎñÆ÷
+-- å‘é€å‡½æ•°
 function WebSocket.Send(protoName,jsonTable,fun)
 	local data = {}
 	data.Protocol = 1
@@ -16,21 +17,22 @@ function WebSocket.Send(protoName,jsonTable,fun)
 	data.Data = jsonTable
 end
 
---C#½ÓÊÕµ½Êı¾İÅÉ·¢
---ÏàÓ¦µÄlua´¦Àí
---¿ÉÒÔÊµÏÖÅÉ·¢»úÖÆ
+-- å¤„ç†æ¶ˆæ¯å‡½æ•°
 function WebSocket.OnMessage()
+
 end
 
---Ö±½Óµ÷ÓÃC#µÄ
+-- åˆ›å»ºè¿æ¥å‡½æ•° 
 function WebSocket.Open()
+
 end
 
---Ö±½ÓC#ÌáÊ¾,ÎŞĞè×ªluaµ÷ÓÃ
+-- é”™è¯¯å¤„ç†å‡½æ•° å›è°ƒ
 function WebSocket.Error()
+	
 end
 
---Ö±½ÓC#¹Ø±Õ,ÎŞĞè×ªluaµ÷ÓÃ
+-- ç½‘ç»œå…³é—­å‡½æ•°
 function WebSocket.OnClose()
 end
 

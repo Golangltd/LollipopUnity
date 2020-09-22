@@ -7,6 +7,12 @@ using System.IO;
 
 public class LollipopUnityX: MonoBehaviour
 {
+     public TextAsset WebSocketMgr;  // 网络管理
+     public TextAsset ItemMgr;       // 道具管理
+     public TextAsset LanguageMgr;   // 多语言管理
+     public TextAsset TipsMgr;       // Tips管理
+     public TextAsset UIMgr;         // UI管理
+     public TextAsset UserInfoMgr;   // 角色数据管理
     LuaEnv luaenv = new LuaEnv();
     void Start()
     {

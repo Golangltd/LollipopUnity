@@ -3,7 +3,7 @@ require("md5")
 
 Util = {}
 
--- ´´½¨Ã¶¾Ù
+-- åˆ›å»ºè¡¨
 function CreatEnumTable(tbl, index)
    -- assert(IsTable(tbl))
     local enumtbl = {}
@@ -15,7 +15,7 @@ function CreatEnumTable(tbl, index)
 end
 
 --[[
-Ê¹ÓÃ·½·¨£º
+æšä¸¾
 
 EnumTable =
 {
@@ -26,11 +26,11 @@ EnumTable =
 EnumTable = CreatEnumTable(EnumTable)
 print(EnumTable.ET1)
 print(EnumTable.ET2)
-Êä³öÎª£º
+è¾“å‡ºç»“æœ
 1
 2
 
-±ÈÈç´Ó10¿ªÊ¼£¬Ö»Òª°ÑÉÏÃæ´´½¨Ã¶¾Ù±íµÄÓï¾ä»»³ÉÏÂÃæÕâÑù¾Í¿ÉÒÔÁË£º
+ä¸‹æ ‡ä»ä»€ä¹ˆidå¼€å§‹
 EnumTable = CreatEnumTable(EnumTable, 10)
 
 path=lfs.currentdir()
@@ -53,7 +53,7 @@ ServerIDEunm =
 }
 
 
--- Éú³ÉServerIdµÄMD5Êı¾İ
+-- é€šè¿‡serverId åˆ›å»ºmd5 æ•°æ®
 function CreatServerIdMD5(serverId)
     print("CreatServerIdMD5:",serverId);
 

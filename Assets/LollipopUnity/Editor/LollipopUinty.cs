@@ -15,5 +15,37 @@ namespace BinGeTools
             Part3D = Instantiate(Part3D);
             Part3D.transform.parent = mUICanvas.transform;
         }
+
+        
+    /// <summary>
+    /// _w 单一的快捷键 W
+    /// #w shift + w
+    /// %w ctrl + w
+    /// &w alt + w
+    /// </summary>
+
+    [MenuItem("LollipopUinty/Test _w")]
+    public static void Test1()
+    {
+        Debug.Log("Test_-----");
+    }
+
+    [MenuItem("LollipopUinty/Test# #w")]
+    public static void Test2 ()
+    {
+        Debug.Log("Test#-----");
+    }
+ 
+    [MenuItem("LollipopUinty/Test% %w")]
+    public static void Test3 ()
+    {
+        Debug.Log("Test%-----");
+    }
+
+    [MenuItem("LollipopUinty/Test& &w")]
+    public static void Test4 ()
+    {
+        Debug.Log("Test&-----");
+    }
     }
 }

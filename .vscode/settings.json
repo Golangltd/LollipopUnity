@@ -57,6 +57,9 @@
         "version",
         "CreatServerIdMD5",
         "CS",
-        "init"
+        "init",
+        "md5",
+        "WebSocketManager",
+        "Json"
     ]
 }
